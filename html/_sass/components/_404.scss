@@ -1,0 +1,63 @@
+.section-404 {
+  padding: 100px 20px;
+  text-align: center;
+
+  h1 {
+    font-family: $font-family-secondary;
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-family: $font-family-secondary;
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+
+  @include media('>=md') {
+    padding-top: 225px;
+    padding-bottom: 130px;
+
+    h1 {
+      font-size: 80px;
+    }
+
+    h2 {
+      margin-bottom: 115px;
+    }
+  }
+
+  @include media('>=lg') {
+    h1 {
+      font-size: 100px;
+    }
+  }
+
+  &.section-404--white {
+    color: white;
+
+    .form-control {
+      border: none;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    h1, h2 {
+      color: white;
+    }
+
+    .form-control:focus {
+      border-color: transparent;
+    }
+
+    a {
+      color: $primary-color;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}

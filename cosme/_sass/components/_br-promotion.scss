@@ -1,0 +1,76 @@
+.br-promotion {
+  background-color: $primary-color;
+  color: white;
+  min-height: 50px;
+  line-height: 2;
+  padding: 10px 0;
+
+  transition: all ease .25s;
+  position: relative;
+
+  .btn {
+    color: white;
+  }
+
+  &.br-promotion--close {
+    display: none;
+  }
+
+  span.small {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+
+  @include media('>=sm') {
+    line-height: 48px;
+    padding: 0;
+
+    span.small {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    border-color: white;
+    background-color: transparent;
+    font-size: 10px;
+
+    &:hover, &:focus {
+      background-color: white;
+      color: $primary-color;
+    }
+  }
+
+  .close {
+    font-size: 14px;
+    color: white;
+
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    margin-right: 25px;
+    opacity: 1;
+
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    &:hover, &:focus {
+      background-color: inherit;
+      color: white;
+      opacity: 0.8;
+    }
+  }
+}
+
+.br-promotion--black {
+  background-color: $secondary-color;
+
+  .btn {
+    &:hover, &:focus {
+      color: $secondary-color;
+    }
+  }
+}

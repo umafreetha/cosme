@@ -1,0 +1,67 @@
+.br-brand__thumb {
+  @extend .br-background;
+
+  display: inline-block;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  width: 145px;
+  height: 100px;
+  line-height: 100px;
+
+  position: relative;
+
+  &:before {
+    content: "";
+    @include overlay($secondary-color);
+  }
+
+  img {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+// CSS .br-brand__name
+.br-brand__name {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+// CSS .br-brand
+.br-brand {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+// CSS .br-brand--style
+.br-brand--style {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  display: inline-block !important;
+  float: none !important;
+  text-align: center;
+
+  .br-brand__thumb:before {
+    display: none;
+  }
+
+  .br-brand__thumb {
+    margin-bottom: 0;
+
+    img {
+      opacity: 0.5;
+    }
+
+    &:hover img,
+    &:focus img {
+      opacity: 1;
+    }
+  }
+
+  &.slick-current.slick-active .br-brand__thumb img {
+    opacity: 1;
+  }
+}
+

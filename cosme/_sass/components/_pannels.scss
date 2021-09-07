@@ -1,0 +1,37 @@
+.panel-default > .panel-heading {
+  border: $border-solid;
+}
+
+.panel-title {
+  font-weight: 400;
+  font-size: 14px;
+
+  > a {
+    display: block;
+    position: relative;
+
+    &:after {
+      @include fa("\f068");
+      font-size: 12px;
+
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      transform: translateY(-50%);
+    }
+
+    &.collapsed:after {
+      content: "\f067";
+    }
+  }
+}
+
+.panel-body {
+  color: $secondary-color;
+}
+
+.panel {
+  box-shadow: none;
+}
+

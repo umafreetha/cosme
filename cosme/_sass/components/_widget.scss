@@ -1,0 +1,383 @@
+.widget-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.textwidget {
+  font-family: $font-family-third;
+  font-size: 12px;
+  display: block;
+}
+
+.widget {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.widget ul,
+.widget ol {
+  li a {
+    font-family: $font-family-third;
+    font-size: 13px;
+  }
+
+  span {
+    color: #bcbcbc;
+    margin-left: 15px;
+  }
+}
+
+/* Widgets as list  */
+.widget_rss ul, .widget_rss ol,
+.widget_nav_menu ul,
+.widget_nav_menu ol,
+.widget_archive ul,
+.widget_archive ol,
+.widget_categories ul,
+.widget_categories ol,
+.widget_links ul,
+.widget_links ol,
+.widget_meta ul,
+.widget_meta ol,
+.widget_pages ul,
+.widget_pages ol,
+.widget_recent_comments ul,
+.widget_recent_comments ol,
+.widget_recent_entries ul,
+.widget_recent_entries ol {
+  margin-bottom: 0;
+}
+
+.list-unstyled,
+.widget_rss ul,
+.widget_rss ol,
+.widget_nav_menu ul,
+.widget_nav_menu ol,
+.widget_archive ul,
+.widget_archive ol,
+.widget_categories ul,
+.widget_categories ol,
+.widget_links ul,
+.widget_links ol,
+.widget_meta ul,
+.widget_meta ol,
+.widget_pages ul,
+.widget_pages ol,
+.widget_recent_comments ul,
+.widget_recent_comments ol,
+.widget_recent_entries ul,
+.widget_recent_entries ol,
+.widget_recent_post ul,
+.widget_recent_post ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.widget_rss ul li, .widget_rss ol li,
+.widget_nav_menu ul li,
+.widget_nav_menu ol li,
+.widget_archive ul li,
+.widget_archive ol li,
+.widget_categories ul li,
+.widget_categories ol li,
+.widget_links ul li,
+.widget_links ol li,
+.widget_meta ul li,
+.widget_meta ol li,
+.widget_pages ul li,
+.widget_pages ol li,
+.widget_recent_comments ul li,
+.widget_recent_comments ol li,
+.widget_recent_entries ul li,
+.widget_recent_entries ol li {
+  position: relative;
+}
+
+.widget_rss ul li > a, .widget_rss ol li > a,
+.widget_nav_menu ul li > a,
+.widget_nav_menu ol li > a,
+.widget_archive ul li > a,
+.widget_archive ol li > a,
+.widget_categories ul li > a,
+.widget_categories ol li > a,
+.widget_links ul li > a,
+.widget_links ol li > a,
+.widget_meta ul li > a,
+.widget_meta ol li > a,
+.widget_pages ul li > a,
+.widget_pages ol li > a,
+.widget_recent_comments ul li > a,
+.widget_recent_comments ol li > a,
+.widget_recent_entries ul li > a,
+.widget_recent_entries ol li > a {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.widget_rss ul li, .widget_rss ol li,
+.widget_nav_menu ul li,
+.widget_nav_menu ol li,
+.widget_archive ul li,
+.widget_archive ol li,
+.widget_categories ul li,
+.widget_categories ol li,
+.widget_links ul li,
+.widget_links ol li,
+.widget_meta ul li,
+.widget_meta ol li,
+.widget_pages ul li,
+.widget_pages ol li,
+.widget_recent_comments ul li,
+.widget_recent_comments ol li,
+.widget_recent_entries ul li,
+.widget_recent_entries ol li,
+.widget_recent_post ul li,
+.widget_recent_post ol li {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: $border-solid;
+}
+
+.widget_rss ul ul, .widget_rss ul ol, .widget_rss ol ul, .widget_rss ol ol,
+.widget_nav_menu ul ul,
+.widget_nav_menu ul ol,
+.widget_nav_menu ol ul,
+.widget_nav_menu ol ol,
+.widget_archive ul ul,
+.widget_archive ul ol,
+.widget_archive ol ul,
+.widget_archive ol ol,
+.widget_categories ul ul,
+.widget_categories ul ol,
+.widget_categories ol ul,
+.widget_categories ol ol,
+.widget_links ul ul,
+.widget_links ul ol,
+.widget_links ol ul,
+.widget_links ol ol,
+.widget_meta ul ul,
+.widget_meta ul ol,
+.widget_meta ol ul,
+.widget_meta ol ol,
+.widget_pages ul ul,
+.widget_pages ul ol,
+.widget_pages ol ul,
+.widget_pages ol ol,
+.widget_recent_comments ul ul,
+.widget_recent_comments ul ol,
+.widget_recent_comments ol ul,
+.widget_recent_comments ol ol,
+.widget_recent_entries ul ul,
+.widget_recent_entries ul ol,
+.widget_recent_entries ol ul,
+.widget_recent_entries ol ol,
+.widget_recent_post ul ul,
+.widget_recent_post ul ol,
+.widget_recent_post ol ul,
+.widget_recent_post ol ol, {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: $border-solid;
+  margin-bottom: 0;
+  padding-left: 25px;
+
+  li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.widget_rss ul li.current-cat > a, .widget_rss ol li.current-cat > a,
+.widget_nav_menu ul li.current-cat > a,
+.widget_nav_menu ol li.current-cat > a,
+.widget_archive ul li.current-cat > a,
+.widget_archive ol li.current-cat > a,
+.widget_categories ul li.current-cat > a,
+.widget_categories ol li.current-cat > a,
+.widget_links ul li.current-cat > a,
+.widget_links ol li.current-cat > a,
+.widget_meta ul li.current-cat > a,
+.widget_meta ol li.current-cat > a,
+.widget_pages ul li.current-cat > a,
+.widget_pages ol li.current-cat > a,
+.widget_recent_comments ul li.current-cat > a,
+.widget_recent_comments ol li.current-cat > a,
+.widget_recent_entries ul li.current-cat > a,
+.widget_recent_entries ol li.current-cat > a {
+  color: $secondary-color;
+}
+
+.widget-area .widget {
+  padding-bottom: 20px;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+// CSS .instagram-pics
+.instagram-pics {
+  overflow: hidden;
+
+  a {
+    width: 33.333333%;
+    float: left;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: relative;
+      display: block;
+      padding-top: 100%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+// CSS .tagcloud
+.tagcloud {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7.5px 21px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    background-color: $bg-color;
+
+    color: $secondary-color;
+    font-size: 12px !important;
+    font-family: $font-family-third;
+
+    transition: all ease 0.25s;
+
+    &:hover, &:focus {
+      color: white;
+      background-color: $primary-color;
+    }
+  }
+}
+
+// .xs-comment__media
+.xs-comment__media {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+}
+
+.xs-comment__info-commenters {
+  margin-bottom: 15px;
+  overflow: hidden;
+
+  .comment__author {
+    margin-bottom: 0;
+  }
+}
+
+.xs-comment {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+// CSS .xs-tweets__content
+.xs-tweets {
+  margin-bottom: 20px;
+}
+
+.xs-tweets__content {
+  margin-bottom: 10px;
+
+  &:before {
+    @include fa("\f099");
+    color: $secondary-color;
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.widget_latest_tweets .link_tweets {
+  font-family: $font-family-third;
+  font-size: 12px;
+
+  a {
+    color: black;
+
+    &:focus, &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// CSS widget-form
+.widget-text {
+  @extend .clearfix;
+  input[type="email"] {
+    width: 67%;
+    float: left;
+    margin-right: 3%;
+
+    @include placeholder($text-color);
+  }
+
+  form .btn {
+    min-width: auto;
+    width: 30%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    font-size: 12px;
+    font-family: $font-family-third;
+
+    @include media('>=lg') {
+      min-width: 100px;
+    }
+
+    @include media('>=sm','<md') {
+      min-width: 100px;
+      width: auto;
+    }
+  }
+}
+
+// CSS .widget_product_prices_filter
+.widget_product_prices_filter {
+  color: $secondary-color;
+  margin-bottom: 20px;
+
+  .ranger-wrapper {
+    margin-bottom: 25px;
+  }
+
+  .small {
+    overflow: hidden;
+
+    span {
+      margin-top: 10px;
+      display: inline-block;
+    }
+  }
+
+  .btn {
+    float: right;
+    min-width: 80px;
+  }
+}

@@ -1,0 +1,81 @@
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+.table-information {
+  color: $secondary-color;
+
+  tbody > tr > td {
+    text-align: right;
+  }
+
+  tbody > tr:last-child {
+    > td, > th {
+      border-bottom: $border-solid;
+    }
+  }
+}
+
+.cart-total {
+  @extend .h5;
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    padding: 10px 0;
+    display: block;
+    overflow: hidden;
+  }
+
+  th {
+    float: left;
+    text-transform: uppercase;
+  }
+
+  td {
+    float: right;
+  }
+
+  .amount {
+    font-size: 20px;
+    color: $primary-color;
+  }
+}
+
+// CSS .table-opening
+.table-opening {
+
+  &.table > thead > tr > th {
+    border-bottom: none;
+  }
+
+  &.table > tbody > tr > td:first-child {
+    width: 195px;
+  }
+
+  &.table > caption + thead > tr:first-child > th,
+  &.table > caption + thead > tr:first-child > td,
+  &.table > colgroup + thead > tr:first-child > th,
+  &.table > colgroup + thead > tr:first-child > td,
+  &.table > thead:first-child > tr:first-child > th,
+  &.table > thead:first-child > tr:first-child > td {
+    border-top: $border-solid;
+    padding: 18px 6px;
+  }
+
+  &.table > thead > tr > th,
+  &.table > thead > tr > td,
+  &.table > tbody > tr > th,
+  &.table > tbody > tr > td,
+  &.table > tfoot > tr > th,
+  &.table > tfoot > tr > td {
+    padding: 6px;
+  }
+}

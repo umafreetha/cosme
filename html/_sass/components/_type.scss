@@ -1,0 +1,134 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+}
+
+.alert-link {
+  color: white !important;
+  text-decoration: underline;
+}
+
+.breadcrumb li {
+
+  & + li:before {
+    @extend %fa;
+  }
+
+  a {
+    color: $text-color;
+  }
+
+  &:hover a {
+    color: $primary-color;
+  }
+}
+
+p > b {
+  color: $secondary-color;
+}
+
+// Blockquotes
+blockquote {
+  padding: 60px 0 30px;
+  text-align: center;
+  font-family: $font-family-secondary;
+  line-height: 1.33333;
+  color: $secondary-color;
+  position: relative;
+
+  @include media('<sm') {
+    font-size: 20px;
+  }
+
+  &:before {
+    content: "“";
+    font-family: $font-family-secondary;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 30px;
+
+    &:after {
+      content: "”";
+    }
+
+    &:before {
+      content: "“";
+    }
+  }
+
+  footer,
+  small,
+  .small {
+    font-size: 14px;
+    font-family: $font-family-third;
+    font-weight: 700;
+    color: $secondary-color;
+
+    &:before {
+      content: '-';
+    }
+  }
+}
+
+.blockquote-white, .blockquote-white footer, .blockquote-white small, .blockquote-white .small {
+  color: white;
+}
+
+.br-quote-bg {
+  background-color: #ebc0ab;
+  padding: 60px 20px 8px;
+
+  @include media('>=xs') {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include media('>=md') {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+[data-toggle="tooltip"] {
+  cursor: pointer;
+}
+
+.tooltip-inner {
+  min-height: 30px;
+  min-width: 80px;
+  padding: 6px 10px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.modal-content {
+  box-shadow: none;
+}
+
+.progress {
+  height: 10px;
+  box-shadow: none;
+}
+
+.blockquote-style:before {
+  color: #ebc0ab;
+}

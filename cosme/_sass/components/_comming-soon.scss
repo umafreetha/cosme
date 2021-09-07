@@ -1,0 +1,102 @@
+.br-commingsoon {
+  height: 100vh;
+  position: relative;
+
+  &:before {
+    content: "";
+    @include overlay(black,0.4);
+  }
+}
+
+.br-commingsoon__content {
+  position: relative;
+  z-index: 5;
+  color: white;
+  height: 100vh;
+
+  .br-logo {
+    padding: 0 50px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    margin: 0 auto;
+
+    @include media('>=xs') {
+      width: 360px;
+    }
+  }
+
+  .br-commingsoon__main {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+}
+
+.br-commingsoon__main {
+  > h1 {
+    font-family: $font-family-playfair;
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+  }
+
+  h5, .nav-social a, .nav-social ul a {
+    color: white;
+  }
+
+  .nav-social a:hover, .nav-social a:focus {
+    color: $primary-color;
+  }
+
+  > p {
+    font-size: 16px;
+  }
+}
+
+// CSS .br-countdown
+.br-clock-wrapper {
+}
+
+.br-countdown {
+  @extend .tb;
+  text-transform: uppercase;
+  font-family: $font-family-third;
+  font-weight: 700;
+
+  span {
+    @extend .table-cell-center;
+  }
+
+  strong {
+    font-family: $font-family-secondary;
+    font-size: 40px;
+    font-weight: 400;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 50px;
+
+    @include media('>=xs') {
+      width: 100px;
+    }
+
+
+    @include media ('>=xs','<md') {
+      font-size: 70px;
+      line-height: 60px;
+      height: 60px;
+    }
+
+    @include media ('>=md') {
+      font-size: 100px;
+      line-height: 80px;
+      height: 80px;
+    }
+  }
+}

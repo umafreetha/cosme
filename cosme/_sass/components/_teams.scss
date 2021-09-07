@@ -1,0 +1,20 @@
+.br-team__thumb {
+  @extend .br-img;
+
+  &:before {
+    padding-top: 122.2222%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba($secondary-color,0.5);
+    z-index: 5;
+
+    transition: all ease 0.5s;
+  }
+}

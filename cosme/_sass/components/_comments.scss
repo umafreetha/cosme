@@ -1,0 +1,155 @@
+.comment-form-author, .comment-form-email, .comment-form-url, .comment-form-comment {
+  margin-bottom: 0;
+}
+
+.comments-title small {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.comment, .comment .children {
+  @extend .list-style-none;
+}
+
+.comment {
+  > li {
+    margin-bottom: 25px;
+  }
+
+  .children {
+    @include media('>=xs') {
+      padding-left: 97px; // 67+30
+    }
+
+    li {
+      padding-top: 30px;
+      border-top: $border-solid;
+    }
+  }
+
+  > li {
+    // padding-bottom: 20px;
+    border-bottom: $border-solid;
+  }
+}
+
+.children .comment__body {
+  border-bottom: none;
+}
+
+// Comment body
+.comment__body {
+  @extend .media;
+  margin-bottom: 25px;
+}
+
+.comment__avatar {
+  @extend .media-object;
+  @extend .media-left;
+  padding-right: 30px;
+
+  a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include media('>=sm') {
+      width: 67px;
+      height: 67px;
+    }
+  }
+}
+
+.comment__container {
+  @extend .media-body;
+
+  .comment__metadata a {
+    margin-left: 10px;
+  }
+}
+
+.comment__author {
+  font-weight: 400;
+}
+
+.comment__author, .comment__metadata {
+  display: inline-block;
+}
+
+.comment__metadata a {
+  color: $text-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.comment__meta {
+  margin-bottom: 10px;
+}
+
+.comment__content {
+  h4 {
+    font-family: $font-family-base;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.comment__actions {
+  float: right;
+}
+
+.comment__link {
+  margin-left: 20px;
+  font-size: 12px;
+  color: #1c1c1c;
+
+  i {
+    margin-right: 7px;
+  }
+}
+
+// CSS .comments-rating
+.comments-rating {
+  .comment__metadata {
+    font-size: 12px;
+  }
+}
+
+.comment__star {
+  @extend .media-object;
+  @extend .media-left;
+  padding-right: 80px;
+
+  > .rating {
+    width: 115px;
+  }
+}
+
+.commnent-submit {
+  color: $secondary-color;
+  overflow: hidden;
+
+  .rating {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+  }
+
+  @include media('>=xs') {
+    input[type="submit"] {
+      float: right;
+    }
+
+    > span {
+      padding-top: 10px;
+      display: inline-block;
+    }
+  }
+}
+

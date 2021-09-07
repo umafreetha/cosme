@@ -1,0 +1,54 @@
+.br-policy__icon {
+  font-size: 40px;
+  color: $secondary-color;
+  line-height: 1;
+  text-align: left;
+
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.br-policy__text {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+// CSS .br-policy
+.br-policy__item {
+  padding: 20px;
+}
+
+.br-policy {
+
+  .br-policy__item {
+    display: block;
+
+    @include media('>=md') {
+      width: 33.33333%;
+      float: left;
+      text-align: center;
+
+      & + .br-policy__item {
+        border-left: $border-solid;
+      }
+    }
+  }
+
+  @include media('>=md') {
+    border: $border-solid;
+    border-top: none;
+    overflow: hidden;
+
+    > .container {
+      .br-policy__item:first-child {
+        border-left: $border-solid;
+      }
+
+      .br-policy__item:last-child {
+        border-right: $border-solid;
+      }
+    }
+  }
+}

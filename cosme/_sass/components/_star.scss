@@ -1,0 +1,27 @@
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  color: #bcbcbc;
+}
+
+.rating > span.active:before,
+.rating > span.active ~ span:before {
+   content: "\f005";
+   font-family: FontAwesome;
+   position: absolute;
+   color: #efc55f;
+}
+
+.rating.rating-comment > span:hover:before,
+.rating.rating-comment > span:hover ~ span:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  position: absolute;
+  color: #efc55f;
+}

@@ -1,0 +1,73 @@
+[class*="btn-"]:not(.dropdown-toggle),
+.comment-form .submit {
+  min-width: 130px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  font-size: $btn-font-size;
+  text-transform: uppercase;
+  transition: all ease .25s;
+
+  &:focus,
+  &:active, &.active {
+    box-shadow: none;
+    outline: none !important;
+  }
+
+  &.btn-lg {
+    font-size: 12px;
+    min-width: 150px;
+  }
+
+  &.btn-sm,
+  &.btn-xs {
+    font-size: 8px;
+    min-width: 90px;
+  }
+
+  &.btn-xs {
+    min-width: 70px;
+  }
+
+  i {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  @extend .btn;
+  @extend .btn-default;
+}
+
+
+.comment-form .submit {
+  @extend .btn-primary;
+}
+
+.close {
+  opacity: 0.6;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-default {
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+  }
+}
+
+.btn-white {
+  @include button-variant(white,$primary-color,$primary-color);
+}
+
+.btn-150 {
+  width: 150px !important;
+}

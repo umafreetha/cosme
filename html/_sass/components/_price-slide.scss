@@ -1,0 +1,34 @@
+.price_slider.ui-slider, .ranger.ui-slider {
+  height: 3px;
+  border: 1px solid $secondary-color;
+  position: relative;
+}
+
+.price_slider.ui-slider .ui-slider-range, .ranger.ui-slider .ui-slider-range {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: $secondary-color;
+  z-index: 1;
+}
+
+.price_slider.ui-slider .ui-slider-handle, .ranger.ui-slider .ui-slider-handle {
+  position: absolute;
+  top: -5.5px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  z-index: 2;
+
+  &:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: $secondary-color;
+    @include absolute(0,null,0);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

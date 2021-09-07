@@ -1,0 +1,40 @@
+.alert-dismissable, .alert-dismissible {
+  padding-right: 40px;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+  top: 0px;
+}
+
+.alert {
+  > i {
+    margin-right: 10px;
+  }
+
+  > strong {
+    text-transform: uppercase;
+    font-family: $font-family-third;
+    margin-right: 5px;
+  }
+}
+
+.alert-dark {
+  height: 50px;
+  background-color: $secondary-color;
+  color: white;
+
+  p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+}
+
